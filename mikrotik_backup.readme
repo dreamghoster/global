@@ -1,0 +1,1 @@
+Creating backups from Mikrotik devices one-by-one. Need preconfigured user and ssh-keys (policy=local,ssh,ftp,read,write,policy,test,sensitive).
