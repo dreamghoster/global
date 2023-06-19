@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\winbox]
+@="URL:winbox Protocol"
+"URL Protocol"="winbox://"
+[HKEY_CLASSES_ROOT\winbox\shell]
+[HKEY_CLASSES_ROOT\winbox\shell\open]
+[HKEY_CLASSES_ROOT\winbox\shell\open\command]
+@="cmd /V:ON /c set params=%1 && set params=!params:winbox://=! && start \"Winbox\" \"C:\\Program Files\\winbox\\winbox.exe\" !params:/=!"
