@@ -1,0 +1,8 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\ssh]
+@="URL:ssh Protocol"
+"URL Protocol"="ssh://"
+[HKEY_CLASSES_ROOT\ssh\shell]
+[HKEY_CLASSES_ROOT\ssh\shell\open]
+[HKEY_CLASSES_ROOT\ssh\shell\open\command]
+@="cmd /V:ON /c set params=%1 && set params=!params:ssh://=! && start \"PuTTY\" \"c:\\Program Files\\PuTTY\\putty.exe\" -ssh !params:/=!"
